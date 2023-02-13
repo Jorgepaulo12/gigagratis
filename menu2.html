@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <style>
+  
+  input{
+   outline: none;
+  }
+  
+  
+ </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title></title>
+</head>
+
+<body>
+<div>
+ <h3>a sua recompensa receberá brevemente assim que o seu numero forem verificado:
+ compartilhe para 5 amigos, para ter a sua recompensa
+ 
+ </h3>
+ <br>
+ <input id="texto" type="text" value="giga grátis.vercel.app">
+ <button id="button">copiar e compartilhar</button>
+ 
+ <script>
+  
+  var t= document.getElementById('button').addEventListener('click', function() {
+   document.getElementById("texto").select();
+   document.execCommand('copy')
+   alert("copiado")
+  })
+  
+ 
+ 
+  
+ </script>
+ 
+</div>
+</body>
+
+</html>

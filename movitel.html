@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+ 
+ 
+ 
+ <style>
+  
+  
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+    font-size: 12px;
+    background-image:url("movitel.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 10em 5em;
+    height: 100%;
+  border-radius: 6px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  align-items: center;
+  justify-content: center ;
+  gap: 1rem;
+  padding: 5rem 15px;
+  width: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)
+  ), url("movitel.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+label {
+  color: #fd7e14;
+  font-size: 2rem;
+}
+
+input {
+  padding: 10px 15px;
+  border-radius: 6px;
+  outline: none;
+}
+
+button {
+  background: #fd7e14;
+  color: #fff;
+  padding: 8px 26px;
+  border: none;
+  border-radius: 6px;
+}
+
+button:hover {
+  background: seagreen;
+}
+  #erro{
+   color: red;
+   font-size: 18px;
+  }
+ </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  
+   
+ 
+  
+  
+
+  <title id="t"></title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  
+</head>
+
+<body>
+
+ <div id="certo"></div>
+  <div id="form">
+    <div id="erro"></div>
+    <label for="">2GB GRÁTIS</label>
+    <input id="campo" class="btn" type="number" placeholder="cell:movitel" class="email">
+    
+    <button class="btn" type="submit" onclick="ver()">GANHAR</button>
+  </form>
+  <script>
+   
+   
+   function ver() {
+    var campo = document.getElementById('campo')
+    var campo1 = String(campo.value)
+    var cont = campo1.length;
+    var arr = [campo1[0], campo1[1]]
+    var ver = arr[0] + arr[1]
+   
+    if (cont > 9 || cont < 9) {
+     document.getElementById("erro").innerHTML = "número invalido"
+   
+    }
+   
+   
+   
+   
+    else if (ver != 86 && ver != 87) {
+     document.getElementById("erro").innerHTML = "a operadora não combina "
+    }
+    else {
+     window.location.href="menu2.html"
+    }
+   
+   
+   
+   }
+   
+   
+   
+   
+  </script>
+</body>
+</html>
