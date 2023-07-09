@@ -8,91 +8,44 @@
 
   <!-- Inclua os arquivos CSS do Bootstrap -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css">
-
-  <style>
-    body {
-      background: #fd7e14;
-    }
-
-    div {
-      display: flex;
-      flex-direction: column;
-      border: 1px solid;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
-      padding: 1rem 15px;
-      width: 100%;
-    }
-
-    #m {
-      color: white;
-      background: #fd7e14;
-      border: none;
-      width: 100%;
-      padding: 14px;
-    }
-
-    #v {
-      color: white;
-      background: red;
-      border: none;
-      width: 100%;
-      padding: 15px;
-    }
-
-    #t {
-      color: white;
-      background: #198754;
-      border: none;
-      width: 100%;
-      padding: 15px;
-    }
-
-    em {
-      color: green;
-    }
-
-    p {
-      font-size: 15px;
-    }
-  </style>
-
-  <!-- Inclua o código JavaScript do Google AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7864311651820833" crossorigin="anonymous"></script>
-
-  <script>
-    function movitel() {
-      // Lógica do botão Movitel
-      console.log('Movitel selecionado');
-    }
-
-    function Vodacom() {
-      // Lógica do botão Vodacom
-      console.log('Vodacom selecionado');
-    }
-
-    function mcel() {
-      // Lógica do botão mcel
-      console.log('mcel selecionado');
-    }
-  </script>
 </head>
 
 <body>
-  <div>
-    <p>Caro cliente, aqui estão as três operadoras nacionais que oferecem 2GB de Internet para cada usuário! <em>ESCOLHA A SUA OPERADORA</em></p>
+  <div class="container">
+    <p class="mt-4">Caro cliente, aqui estão as três operadoras nacionais que oferecem 2GB de Internet para cada usuário! <em>ESCOLHA A SUA OPERADORA</em></p>
 
-    <div class="btn btn-primary" onclick="movitel()" id="m">MOVITEL 2GB</div>
-    <div class="btn btn-danger" onclick="Vodacom()" id="v">VODACOM 2GB</div>
-    <div class="btn btn-success" onclick="mcel()" id="t">TMCEL 2GB</div>
+    <div class="row mt-4">
+      <div class="col-12 col-md-4">
+        <button class="btn btn-primary btn-lg btn-block" onclick="movitel()">MOVITEL 2GB</button>
+      </div>
+      <div class="col-12 col-md-4">
+        <button class="btn btn-danger btn-lg btn-block" onclick="vodacom()">VODACOM 2GB</button>
+      </div>
+      <div class="col-12 col-md-4">
+        <button class="btn btn-success btn-lg btn-block" onclick="mcel()">TMCEL 2GB</button>
+      </div>
+    </div>
   </div>
 
   <!-- Inclua os arquivos JavaScript do Bootstrap -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
-</body>
 
-</html>
-/body>
+  <script>
+    function movitel() {
+      console.log("Opção Movitel selecionada");
+      // Lógica específica para Movitel
+    }
+
+    function vodacom() {
+      console.log("Opção Vodacom selecionada");
+      // Lógica específica para Vodacom
+    }
+
+    function mcel() {
+      console.log("Opção TMCEL selecionada");
+      // Lógica específica para TMCEL
+    }
+  </script>
+</body>
 
 </html>
