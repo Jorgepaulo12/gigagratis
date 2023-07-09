@@ -2,120 +2,97 @@
 <html>
 
 <head>
- 
- 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7864311651820833"
-     crossorigin="anonymous"></script>
+  <!-- Inclua os arquivos CSS do Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css">
 
+  <style>
+    body {
+      background: #fd7e14;
+    }
 
+    div {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem 15px;
+      width: 100%;
+    }
 
+    #m {
+      color: white;
+      background: #fd7e14;
+      border: none;
+      width: 100%;
+      padding: 14px;
+    }
 
+    #v {
+      color: white;
+      background: red;
+      border: none;
+      width: 100%;
+      padding: 15px;
+    }
 
+    #t {
+      color: white;
+      background: #198754;
+      border: none;
+      width: 100%;
+      padding: 15px;
+    }
 
+    em {
+      color: green;
+    }
 
-<!-- Affied.com Smart Widget for Gigas -->
-<div id="_adsbyaffied_"></div>
-<script type="text/javascript" var ref=document.location.href; src="https://affied.com/ad/showjs?wid=fd72dcf0-aba5-11ed-8385-ebfed5f7cb32&type=native&js=1&ref=" + ref></script>
-<!-- End Affied.com Smart Widget -->
-                                
+    p {
+      font-size: 15px;
+    }
+  </style>
 
+  <!-- Inclua o código JavaScript do Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7864311651820833" crossorigin="anonymous"></script>
 
- 
- <style>
-  
-  body{
+  <script>
+    function movitel() {
+      // Lógica do botão Movitel
+      console.log('Movitel selecionado');
+    }
 
-  }
-  
-div {
-   display: flex;
-   flex-direction: column;
-   border: 1px solid;
-   align-items: center;
-   justify-content: center;
-   gap: 1rem;
-   padding: 1rem 15px;
-   width: 100%;
-   
-  
-}
+    function Vodacom() {
+      // Lógica do botão Vodacom
+      console.log('Vodacom selecionado');
+    }
 
-
-
-#m{
- color: white;
- background: #fd7e14;
- border: none;
- width: 100%;
- padding: 14px;
- 
-}
-#v{
- color: white;
- background: red;
- border: none;
- width: 100%;
- padding: 15px;
- 
-}
-
-
-#t{
- color: white;
- background: #198754;
- border: none;
- width: 100%;
- padding: 15px;
- 
- 
-}
-
-em{
- color: green;
-}
-
-
-p{
- font-size: 15px;
- 
-}
- </style>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <title></title>
-
-
-
-
-
-
-
-
-<script type="text/javascript" src="https://udbaa.com/bnr.php?section=General&pub=271347&format=300x250&ga=g"></script>
-<noscript><a href="https://yllix.com/publishers/271347" target="_blank"><img src="//ylx-aff.advertica-cdn.com/pub/160x600.png" style="border:none;margin:0;padding:0;vertical-align:baseline;" alt="ylliX - Online Advertising Network" /></a></noscript>
-
-
-    <script id="gather_config" type="text/javascript">
-        window.Gather_SiteID = "3670c2fb-662e-476c-948f-6e058b79f857";
-    </script>
-    <script id="gather_script" src="https://online.gather.network/gather.app.js"></script>
-
-
+    function mcel() {
+      // Lógica do botão mcel
+      console.log('mcel selecionado');
+    }
+  </script>
 </head>
 
 <body>
- <div>
- <p>caro cliente aqui está as três operadoras nacionais elas oferecem 2GB de Internet a cada usuário! <em>ESCOLHA A SUA OPERADORA </em></ESCOLHA><p>
- 
+  <div>
+    <p>Caro cliente, aqui estão as três operadoras nacionais que oferecem 2GB de Internet para cada usuário! <em>ESCOLHA A SUA OPERADORA</em></p>
 
- 
- <div onclick="movitel()" id="m">MOVITEL  2GB</div> 
- <div onclick="Vodacom()" id="v">VODACOM  2GB</div>
- <div onclick="mcel()" id="t">TMCEL    2GB</div>
- 
-</div>
-<<script src="index.js"></script>
+    <div class="btn btn-primary" onclick="movitel()" id="m">MOVITEL 2GB</div>
+    <div class="btn btn-danger" onclick="Vodacom()" id="v">VODACOM 2GB</div>
+    <div class="btn btn-success" onclick="mcel()" id="t">TMCEL 2GB</div>
+  </div>
+
+  <!-- Inclua os arquivos JavaScript do Bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
 </body>
+
+</html>
+/body>
 
 </html>
